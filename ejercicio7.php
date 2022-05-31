@@ -1,4 +1,4 @@
-<?php // Constantes en PHP
+<?php // VAriables y Constantes en PHP
 
     $edad=32; //Variables
 
@@ -19,3 +19,17 @@
 
     
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables y Constantes en PHP</title>
+</head>
+<body>
+  
+
+</body>
+</html>

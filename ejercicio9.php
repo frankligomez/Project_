@@ -5,12 +5,13 @@ if($_POST){
     $valorA=$_POST['valorA'];
     $valorB=$_POST['valorB'];
 
+    if($valorA > $valorB){
 
-   if($valorA != $valorB){
-
-        echo "Rta: El valor de A es diferente de B";
-        
-   }     
+        echo "Rta: El valor de A es mayor que el valor de B";
+    }     
+        else {
+            echo "Rta: El valor de A no es mayor al valor de B";
+        }
 
 
 

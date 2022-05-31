@@ -2,10 +2,12 @@
 
 if($_POST){
 
+    $txtGenero=$_POST['txtGenero'];
     $txtNombre=$_POST['txtNombre'];
     $txtApellido=$_POST['txtApellido'];
+
     
-    echo "Hola ".$txtNombre." ".$txtApellido;
+    echo "Hola ".$txtGenero." ".$txtNombre." ".$txtApellido;
 
 }
 
@@ -23,7 +25,11 @@ if($_POST){
 <body>
     
     <form action="ejercicio5.php" method="post">
-    
+        
+        Genero:
+        <input type="text" name="txtGenero" id="">
+        <br/>
+
         Nombre: 
         <input type="text" name="txtNombre" id="">
         <br/>
@@ -31,6 +37,7 @@ if($_POST){
         Apellido: 
         <input type="text" name="txtApellido" id="">
         <br/>
+        
         <input type="submit" value="Enviar">
 
     </form>

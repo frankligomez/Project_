@@ -18,7 +18,6 @@
     <title>Método POST</title>
 </head>
 <body>
-    
 
     <form action="ejercicio2.php" method="post">
         Nombre:
@@ -26,7 +25,7 @@
     <br/>
     <input type="submit" value="Enviar">
 
-
     </form>
+
 </body>
 </html>
