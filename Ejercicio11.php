@@ -24,17 +24,22 @@ if($_POST){
 
     if($valorA==$valorB){
 
-        echo "El valor de A es igual al valor de B <br/>";
+        echo "<br/> El valor de A es igual a el valor de B <br/>";
 
         if($valorA=4){
             echo "El valor es 4 <br/>";
-
         }
 
         if($valorA=5){
             echo "El valor es 5 <br/>";
-
         }
+
+    }
+
+    if( ($valorA==$valorB) && ($valorA==4) ) {
+
+        echo "El valor de A es igual a B y es un número 4";
+
     }
 
 }
