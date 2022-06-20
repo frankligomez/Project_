@@ -5,6 +5,8 @@
 class persona{
 
     public $nombre; // propiedades
+    private $edad;
+    protected $altura;
 
     public function asignarNombre($nuevoNombre){  // acciones o métodos
 
@@ -16,19 +18,29 @@ class persona{
         echo "Hola soy ".$this->nombre." ";
 
     } 
+
+    public function mostrarEdad(){
+        $this->edad=20;
+        return $this->edad;
+    
+    }
 }
 
-$objAlumno= new persona(); // crear objeto a partir de una clase, se llama Instancia
-$objAlumno->asignarNombre("Frankli"); // llamando un método
+class trabajador extends persona{
+    
+    public $puesto; // propiedad nueva
+    
+    public function presentarseComoTrabajador(){
+        echo "Hola, soy ".$this->nombre." y soy un ".$this->puesto;
 
-$objAlumno2= new persona();
-$objAlumno2->asignarNombre("Luis");
-$objAlumno2->imprimirNombre();
+    }
+}
 
+$objTrabajador= new trabajador(); // crear objeto a partir de una clase, se llama Instancia
+$objTrabajador->asignarNombre("Frankli Gomez"); // llamando un método
+$objTrabajador->puesto="Profesor"; // llamando un método
 
-echo $objAlumno->nombre."<br/>";  // imprimir una propiedad
-echo $objAlumno2->nombre."<br/>";  // imprimir una propiedad
-
+$objTrabajador->presentarseComoTrabajador();
 
 ?>
 
@@ -39,7 +51,7 @@ echo $objAlumno2->nombre."<br/>";  // imprimir una propiedad
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visibilidad de datos con PHP</title>
+    <title>Herencia en PHP</title>
 </head>
     <body>
     

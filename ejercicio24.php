@@ -5,8 +5,8 @@
 class persona{
 
     public $nombre; // propiedades
-    private $edad;
-    protected $altura;
+    private $edad; // privado
+    protected $altura; // encapsulamiento
 
     public function asignarNombre($nuevoNombre){  // acciones o métodos
 
@@ -15,7 +15,7 @@ class persona{
 
     public function imprimirNombre(){
 
-        echo "Hola soy ".$this->nombre." ";
+        echo "Hola soy ".$this->nombre;
 
     } 
 
@@ -33,10 +33,8 @@ $objAlumno2= new persona();
 $objAlumno2->asignarNombre("Luis");
 $objAlumno2->imprimirNombre();
 
-
 echo $objAlumno2->nombre."<br/>";  // imprimir una propiedad
-echo $objAlumno2->edad."<br/>";  // imprimir una propiedad
-echo $objAlumno2->altura."<br/>"; 
+echo $objAlumno2->mostrarEdad()."<br/>";
 
 ?>
 
